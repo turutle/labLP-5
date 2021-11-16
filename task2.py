@@ -4,11 +4,13 @@
 
 def harmonMid(*args):
     if args:
-        a = ans = 0
-        for item in args:
-            a += 1
-            ans += 1/item
-        return a/(ans)
+        ans = 0
+        if not(0.in(args)):
+            for item in args:
+                ans += 1/item
+            return len(args) / ans
+        else:
+            return 0
     else:
         return None
 

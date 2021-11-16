@@ -5,11 +5,9 @@
 def geometricMid(*args):
     if args:
         ans = 1
-        a = 0
         for item in args:
             ans *= item
-            a += 1
-        return pow(ans, 1/a)
+        return pow(ans, 1/len(args))
     else:
         return None
 
