@@ -3,18 +3,17 @@
 
 #Индивидуальное задание: Найти сумму аргументов, у которых имя содержит четное количество символов
 
-def after_min(**kwargs):
+def even_sum(**kwargs):
     if kwargs:
         ans = 0
-        a = min(kwargs)
-        for i in range(kwargs.index(a) + 1, len(kwargs)):
-            ans += kwargs[i]
+        for name, values in kwargs.items():
+            if len(name) % 2 == 0:
+                ans += sum(values)
         return ans
     else:
         return None
 
 
 if __name__ == "__main__":
-    print(after_min())
-    print(after_min(3, 7, 1, 6, 9))
-    print(after_min(1, 5, 8, -1, 4, 3, 9))
+    print(even_sum())
+    print(even_sum(name = [10, 11, 0, 1], first = [1, 200, 4], notodd = [1, 20, 4, -10, 2]))
