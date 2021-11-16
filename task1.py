@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def geometricMid(*args):
+def geometric_mid(*args):
     if args:
         ans = 1
         for item in args:
@@ -13,6 +13,6 @@ def geometricMid(*args):
 
 
 if __name__ == "__main__":
-    print(geometricMid())
-    print(geometricMid(3, 7, 1, 6, 9))
-    print(geometricMid(1, 5, 8, 4, 3, 9))
+    print(geometric_mid())
+    print(geometric_mid(3, 7, 1, 6, 9))
+    print(geometric_mid(1, 5, 8, 4, 3, 9))

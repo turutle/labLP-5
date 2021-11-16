@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def harmonMid(*args):
+def harmon_mid(*args):
     if args:
         ans = 0
         if not(0.in(args)):
@@ -15,6 +15,6 @@ def harmonMid(*args):
         return None
 
 if __name__ == "__main__":
-    print(harmonMid())
-    print(harmonMid(3, 7, 1, 6, 9))
-    print(harmonMid(1, 5, 8, 4, 3, 9))
+    print(harmon_mid())
+    print(harmon_mid(3, 7, 1, 6, 9))
+    print(harmon_mid(1, 5, 8, 4, 3, 9))

@@ -3,7 +3,7 @@
 
 #Индивидуальное задание №13: Найти сумму аргументов, расположенных после минимального аргумента
 
-def afterMin(*args):
+def after_min(*args):
     if args:
         ans = 0
         a = min(args)
@@ -15,6 +15,6 @@ def afterMin(*args):
 
 
 if __name__ == "__main__":
-    print(afterMin())
-    print(afterMin(3, 7, 1, 6, 9))
-    print(afterMin(1, 5, 8, -1, 4, 3, 9))
+    print(after_min())
+    print(after_min(3, 7, 1, 6, 9))
+    print(after_min(1, 5, 8, -1, 4, 3, 9))
