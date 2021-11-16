@@ -3,14 +3,11 @@
 
 
 def harmon_mid(*args):
-    if args:
+    if args or not(0.in(args)):
         ans = 0
-        if not(0.in(args)):
-            for item in args:
-                ans += 1/item
-            return len(args) / ans
-        else:
-            return 0
+        for item in args:
+            ans += 1/item
+        return len(args) / ans
     else:
         return None
 
