@@ -3,7 +3,7 @@
 
 
 def harmon_mid(*args):
-    if args or not(0.in(args)):
+    if args and 0 not in args:
         ans = 0
         for item in args:
             ans += 1/item
