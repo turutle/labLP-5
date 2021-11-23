@@ -6,9 +6,10 @@
 def after_min(*args):
     if args:
         ans = 0
-        a = min(args)
-        for i in range(args.index(a) + 1, len(args)):
-            ans += args[i]
+        idx = args.index(min(args))
+        for item in args:
+            if args.index(item) > idx:
+                ans += item
         return ans
     else:
         return None
